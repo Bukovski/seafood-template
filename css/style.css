@@ -99,7 +99,7 @@ a {
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding-top: 27px;
+  padding-top: 20px;
 }
 
 .logo {
@@ -108,7 +108,9 @@ a {
 
 .logo__img {}
 
-.menu {}
+.menu {
+  margin-top: 15px;
+}
 
 .menu__list {
   display: flex;
@@ -121,13 +123,15 @@ a {
 .menu__link {
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--color-blue);
   font-size: 18px;
   line-height: 21px;
+  color: var(--color-blue);
+  border-bottom: 2px solid transparent;
+  transition: .5s ease;
 }
 
 .menu__link:hover {
-  border-bottom: 1px solid var(--color-blue);
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .phone {
@@ -138,19 +142,21 @@ a {
 .phone__img {}
 
 .header__content {
-  padding-bottom: 80px;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 20px;
+  margin-top: -100px;
 
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .header__title {
   max-width: 589px;
-  padding-top: 200px;
+  padding-top: 170px;
   padding-left: 112px;
-  margin-bottom: 130px;
+  margin-bottom: 60px;
 
   font-family: var(--font-serif);
   font-weight: 700;
@@ -178,6 +184,8 @@ a {
 }
 
 .header__content-btn {
+  position: absolute;
+
   display: inline-block;
   padding: 14px 88px;
   margin-left: 112px;
@@ -191,20 +199,29 @@ a {
   line-height: 32px;
   color: var(--color-white);
   background-color: rgba(255, 255, 255, .5);
-  transition: .25s ease-out;
+  transition: .5s ease-out;
 }
 
 .header__content-btn:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-white);
+  color: var(--color-blue);
 }
 
 .header__content-box {
   display: flex;
-  margin-left: 100%;
-  margin-right: 30px;
+  justify-content: end;
+  /*margin-left: 100%;*/
+  /*margin-right: 30px;*/
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--color-white);
 }
 
 .header__content-link {
+}
+
+.header__content-link--active {
+  font-weight: 700;
 }
 
 
