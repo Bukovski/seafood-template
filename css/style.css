@@ -348,9 +348,9 @@ a {
   background-color: var(--color-blue);
 }
 
-/*======== SEAFOOD ========*/
+/*======== SEAFOOD-BOX ========*/
 
-.seafood {
+.seafood-box {
   padding: 290px 0 95px;
 
   background-image: url("../images/seafood-bg.jpg");
@@ -365,12 +365,12 @@ a {
   color: var(--color-white);
 }
 
-.seafood__items {
+.seafood-box__items {
   display: flex;
   justify-content: space-around;
 }
 
-.seafood__item {
+.seafood-box__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -385,7 +385,67 @@ a {
   background-repeat: no-repeat;
 }
 
+/*======== SEAFOOD ========*/
 
+.seafood {
+  padding: 100px 0;
+}
+
+.seafood__items {
+  margin-bottom: 100px;
+}
+
+.seafood__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.seafood__item-content {
+
+}
+
+.seafood__item-title {
+  max-width: 490px;
+  margin-bottom: 30px;
+
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-blue);
+}
+
+.seafood__item-text {
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.seafood__item--text-right .seafood__item-title {
+  max-width: 420px;
+}
+
+.seafood__item--text-right .seafood__item-content {
+  margin-right: 180px;
+}
+
+.seafood__item-img {
+}
+
+.seafood__quote {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seafood__quote-img {
+}
+
+.seafood__quote-text {
+  max-width: 696px;
+  margin: 0 auto;
+  font-size: 18px;
+}
 
 
 
