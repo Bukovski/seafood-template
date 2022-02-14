@@ -447,6 +447,40 @@ a {
   font-size: 18px;
 }
 
+/*======== CONTACTS ========*/
 
+.contacts {
+  background-image: url("../images/contacts-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
 
+.contacts__box {
+  margin-left: auto;
+  padding: 33px 0 33px 20px;
+  width: 390px;
+  background-color: var(--color-white);
+}
 
+.contacts__text {
+  width: 195px;
+  margin-bottom: 30px;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-blue);
+}
+
+.contacts__box-list {
+  list-style: none;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contacts__box-item {
+  margin-top: 30px;
+}
+
+.contacts__box-item span {
+  display: block;
+}
