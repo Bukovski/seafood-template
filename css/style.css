@@ -484,3 +484,46 @@ a {
 .contacts__box-item span {
   display: block;
 }
+
+/*======== FOOTER ========*/
+
+.footer {
+  padding: 25px 0 110px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 45px 0 23px;
+}
+
+.footer__inner .menu {
+  padding-bottom: 30px;
+}
+
+.footer-social__list {
+  display: flex;
+  align-items: center;
+  padding-bottom: 19px;
+  list-style: none;
+}
+
+.footer-social__item + .footer-social__item {
+  margin-left: 10px;
+}
+
+.footer-social__item {
+}
+
+.footer-social__link:hover .footer-social__icon {
+  fill: var(--color-blue);
+}
+
+.footer-social__icon {
+  fill: var(--color-gray);
+
+  transition: fill .3s ease-out;
+}
+
+
