@@ -4,6 +4,17 @@ $(function(){
 		dots: true,
 		prevArrow: "<button type='button' class='slick-prev'><img src='../images/arrow-up.svg' alt='arrow navigation up'></button>",
 		nextArrow: "<button type='button' class='slick-next'><img src='../images/arrow-down.svg' alt='arrow navigation down'></button>",
+		responsive: [
+			{
+				breakpoint: 361,
+				settings: {
+					dots: false,
+					arrows: false,
+					autoplay: true,
+					autoplaySpeed: 2000
+				}
+			}
+		]
 	});
 	
 	/* Product sliders */
@@ -23,6 +34,12 @@ $(function(){
 		asNavFor: ".product__name",
 		fade: true,
 		arrows: false
+	});
+	
+	/* mobile menu */
+	
+	$(".menu__btn").on("click", function () {
+		$(".menu__list").toggleClass("menu__list--active");
 	});
 	
 });

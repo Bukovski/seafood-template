@@ -130,6 +130,7 @@ a {
 
 .menu__list {
   display: flex;
+  z-index: 5;
 }
 
 .menu__item + .menu__item {
@@ -148,6 +149,44 @@ a {
 
 .menu__link:hover {
   border-bottom: 2px solid var(--color-blue);
+}
+
+.menu__btn {
+  display: none;
+  width: 40px;
+  padding: 13px 0;
+
+  position: relative;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.menu__btn::after,
+.menu__btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: var(--color-blue);
+}
+
+.menu__btn::before {
+  top: 0;
+}
+
+.menu__btn::after {
+  bottom: 0;
+}
+
+.menu__btn span {
+  display: block;
+  height: 4px;
+  background-color: var(--color-blue);
 }
 
 .phone {
@@ -524,6 +563,120 @@ a {
   fill: var(--color-gray);
 
   transition: fill .3s ease-out;
+}
+
+/*======== MEDIA ========*/
+
+@media (max-width: 1160px) {
+
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    margin: 12px 20px 0 auto;
+  }
+
+  .menu__list {
+    display: block;
+
+    position: absolute;
+    top: -355px; /* hide menu from display */
+
+    left: 20%;
+    right: 20%;
+    background-color: var(--color-white);
+    transition: all .4s ease-in;
+  }
+
+  .menu__list.menu__list--active {
+    top: 75px;
+  }
+
+  .menu__btn {
+    display: block;
+  }
+
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .menu__link:hover {
+    border-bottom: 2px solid var(--color-white);
+  }
+}
+
+@media (max-width: 745px) {
+  .header__title {
+    max-width: 100%;
+    padding-left: 0;
+
+    font-size: 50px;
+    line-height: 66px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 470px) {
+  .header__title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .header-slider {
+    padding-left: 50px;
+  }
+
+  .slick-dots {
+    left: 5px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    left: 9px;
+  }
+
+  .header__content-btn {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .phone {
+    margin-right: 0;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .logo__img {
+    width: 70px;
+  }
+
+  .menu__list {
+    left: 10%;
+    right: 10%;
+  }
+
+  .header__title {
+    padding-top: 125px;
+  }
+
+  .header-slider {
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .header__content-btn {
+    margin-left: 0;
+  }
 }
 
 
