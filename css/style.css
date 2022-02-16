@@ -718,6 +718,19 @@ a {
     line-height: 66px;
     text-align: center;
   }
+
+  .contacts {
+    background-image: none;
+  }
+
+  .contacts__box {
+    width: 100%;
+    padding: 33px 0 33px 0;
+  }
+
+  .contacts__text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -780,7 +793,7 @@ a {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 370px) {
   .phone {
     margin-right: 0;
   }
