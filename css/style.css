@@ -407,6 +407,7 @@ a {
 .seafood-box__items {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .seafood-box__item {
@@ -665,6 +666,14 @@ a {
   .product__name .slick-active button {
     background-color: var(--color-blue);
   }
+
+  .seafood-box {
+    padding: 230px 0 50px;
+  }
+
+  .seafood-box__item {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 745px) {
@@ -676,12 +685,15 @@ a {
     line-height: 66px;
     text-align: center;
   }
-
 }
 
 @media (max-width: 650px) {
   .product__content {
     width: 100%;
+  }
+
+  .seafood-box {
+    display: none;
   }
 }
 
