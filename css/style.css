@@ -573,6 +573,23 @@ a {
   .product__name {
     width: 350px;
   }
+
+  .footer .logo,
+  .footer .menu {
+    display: none;
+  }
+
+  .footer {
+    padding: 40px 0 40px;
+  }
+
+  .footer__inner {
+    justify-content: center;
+  }
+
+  .footer-social__list {
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 1000px) {
