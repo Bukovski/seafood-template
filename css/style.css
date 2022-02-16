@@ -467,6 +467,7 @@ a {
 
 .seafood__item--text-right .seafood__item-content {
   margin-right: 180px;
+  margin-left: 20px;
 }
 
 .seafood__item-img {
@@ -615,6 +616,38 @@ a {
 
   .product__name {
     width: 250px;
+  }
+
+  .seafood {
+    padding: 50px 0;
+  }
+  .seafood img {
+    max-width: 100%;
+  }
+
+  .seafood__item-content {
+    padding-right: 0;
+  }
+
+  .seafood__item--text-right .seafood__item-content {
+    margin-left: 0;
+  }
+
+  .seafood__items {
+    margin-bottom: 50px;
+  }
+  .seafood__item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .seafood__item--text-right {
+    flex-wrap: wrap-reverse;
+  }
+
+  .seafood__item-title,
+  .seafood__item-text {
+    max-width: 100%;
   }
 }
 
