@@ -2,8 +2,8 @@ $(function(){
 	/* Header slider */
 	$(".header-slider").slick({
 		dots: true,
-		prevArrow: "<button type='button' class='slick-prev'><img src='../images/arrow-up.svg' alt='arrow navigation up'></button>",
-		nextArrow: "<button type='button' class='slick-next'><img src='../images/arrow-down.svg' alt='arrow navigation down'></button>",
+		prevArrow: "<button type='button' class='slick-prev'><img src='../images/icons/arrow-up.svg' alt='arrow navigation up'></button>",
+		nextArrow: "<button type='button' class='slick-next'><img src='../images/icons/arrow-down.svg' alt='arrow navigation down'></button>",
 		responsive: [
 			{
 				breakpoint: 371,
@@ -24,8 +24,8 @@ $(function(){
 		focusOnSelect: true,
 		asNavFor: ".product__content",
 		vertical: true,
-		prevArrow: "<button type='button' class='product-prev'><img src='../images/product-up.svg' alt='arrow navigation up'></button>",
-		nextArrow: "<button type='button' class='product-next'><img src='../images/product-down.svg' alt='arrow navigation down'></button>",
+		prevArrow: "<button type='button' class='product-prev'><img src='../images/icons/product-up.svg' alt='arrow navigation up'></button>",
+		nextArrow: "<button type='button' class='product-next'><img src='../images/icons/product-down.svg' alt='arrow navigation down'></button>",
 		responsive: [
 			{
 				breakpoint: 861,
